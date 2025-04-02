@@ -4,13 +4,8 @@ phases:
   install:
     commands:
       - echo "Installing PHP 8.1..."
-      - sudo amazon-linux-extras enable php8.1
       - sudo yum install -y php php-cli php-mbstring php-xml php-bcmath php-pdo php-mysqlnd unzip
       - php -v
-      - echo "Installing Composer..."
-      - curl -sS https://getcomposer.org/installer | php
-      - mv composer.phar /usr/local/bin/composer
-      - composer install
   build:
     commands:
       - echo "Building the application..."
