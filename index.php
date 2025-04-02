@@ -15,7 +15,7 @@ $result = $conn->query("SELECT * FROM users");
     <title>PHP CRUD App</title>
 </head>
 <body>
-    <h2>Users List</h2>
+    <h2>Users list</h2>
     <form action="index.php" method="POST">
         <input type="text" name="name" required>
         <button type="submit">Add User</button>
